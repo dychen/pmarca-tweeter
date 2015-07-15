@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pmarca Tweeter</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/twt.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script src="/scripts/index.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1>Tweet like pmarca</h1>
+        </div>
+        <div class="tweet-button" id="tweet-button">Tweet</div>
+    </div>
+
+    <div class="container tweet-container">
+        <div class="tweets">
+            <div class="twt-timeline twt-narrow">
+                <div class="twt-tweet-list twt-inline">
+                    <ul data-bind="foreach: tweets" style="list-style-type: none">
+                        <li><%- include ../partials/tweet.ejs %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
