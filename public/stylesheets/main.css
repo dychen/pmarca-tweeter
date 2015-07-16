@@ -27,8 +27,8 @@ body {
     height: 70px;
 
     margin-top: 50px;
-    float:none;
-    vertical-align:middle;
+    float: none;
+    vertical-align: middle;
 }
 
 .tweet-button:hover {

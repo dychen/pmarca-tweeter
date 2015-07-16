@@ -4,9 +4,17 @@ $(document).ready(function() {
     };
 
     $('#tweet-button').click(function() {
-        $.get('/api/tweet', function(data) {
+        var gen = $('#gen-slider').slider('value');
+        $.get('/api/tweet', { gen: gen }, function(data) {
             model.tweets.unshift({ text: data });
         });
+    });
+
+    $('#gen-slider').slider({
+        range: 'min',
+        min: 1,
+        max: 5,
+        value: 5
     });
 
     /* On page load */
