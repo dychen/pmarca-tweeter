@@ -3,9 +3,11 @@ body {
 }
 
 .jumbotron {
-  background: #333333;
-  color: white;
-  padding-bottom: 80px;
+    background: #333333;
+    background-size: cover;
+    color: white;
+    padding-bottom: 80px;
+    padding-top: 50px;
 }
 
 .tweet-button {
@@ -43,3 +45,4 @@ body {
     max-width: 500px;
     background: white;
 }
+
